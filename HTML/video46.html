@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 70vw;
+            border: 2px solid black;
+            background-color: lightpink;
+        }
+        .box{
+            height: 40px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: salmon;
+            animation-name: myAnimation1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .box1{
+            height: 40px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: salmon;
+            animation-name: myAnimation1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box2{
+            height: 40px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: hsl(199, 93%, 71%);
+            
+            animation-name: myAnimation1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            
+        }
+        @keyframes myAnimation1{
+            from{
+                background-color:RED;
+            }
+            to{
+                background-color:yellow ;
+                transform: translate(60vw);
+            }
+        }
+        @keyframes myAnimation2{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(0.2);
+            }
+            50%{
+                transform: rotate(0.4);
+                
+            }
+            75%{
+                transform: rotate(0.6);
+            }
+            100%{
+                transform: rotate(0.8);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box1">BOX</div>
+        <div class="box2">BOX</div>
+    </div>
+</body>
+</html>
